@@ -3,12 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 
+let city = {
+  name: "Madrid",
+  country: "Spain",
+};
+
 ReactDOM.render(
-  <ul>
-    <li>Hot Dogs</li>
-    <li>Hamburger</li>
-    <li>Pizza</li>
-    <li>Sushi</li>
-  </ul>,
+  <h1 id="heading" className="cool_text">
+    {city.name} is in {city.country}
+  </h1>,
   document.getElementById("root")
 );
