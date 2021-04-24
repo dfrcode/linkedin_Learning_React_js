@@ -1,18 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 
-function Hello() {
+function Lake({ name }) {
+  return <h1>{name}</h1>;
+}
+
+function App() {
   return (
     <div>
-      <h1>Hello!</h1>
-      <p>Welcome to React!</p>
+      <Lake name="Lake Tahoe" />
+      <Lake name="Angora Lake" />
+      <Lake name="Shirley Lake" />
     </div>
   );
 }
 
-ReactDOM.render(
-  <Hello />,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
