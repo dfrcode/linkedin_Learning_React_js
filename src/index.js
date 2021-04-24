@@ -5,9 +5,11 @@ import App from "./App";
 
 ReactDOM.render(
   React.createElement(
-    "div",
+    "ul",
     { style: { color: "red" } },
-    React.createElement("h1", null, "Hello!")
+    React.createElement("li", null, "Hot Dogs"),
+    React.createElement("li", null, "Hamburgers"),
+    React.createElement("li", null, "Pizza")
   ),
   document.getElementById("root")
 );
