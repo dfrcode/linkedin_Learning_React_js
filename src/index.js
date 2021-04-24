@@ -3,14 +3,16 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 
-let city = {
-  name: "Madrid",
-  country: "Spain",
-};
+function Hello() {
+  return (
+    <div>
+      <h1>Hello!</h1>
+      <p>Welcome to React!</p>
+    </div>
+  );
+}
 
 ReactDOM.render(
-  <h1 id="heading" className="cool_text">
-    {city.name} is in {city.country}
-  </h1>,
+  <Hello />,
   document.getElementById("root")
 );
