@@ -20,13 +20,13 @@ const lakeList = [
   },
 ];
 
-function App(props) {
+function App({lakes}) {
   return (
     <div>
-      {props.lakes.map((lake) => (
-        <div id={lake.id}>
+      {lakes.map((lake) => (
+        <div key={lake.id}>
           <h1>{lake.name}</h1>
-          <p>{Lake.trailhead}</p>
+          <p>Accessed by: {lake.trailhead}</p>
         </div>
       ))}
     </div>
